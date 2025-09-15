@@ -1,6 +1,13 @@
-const mongoose = require('mongoose');
-const bcrypt = require('bcryptjs');
+/**
+ * User Model
+ * Defines the schema for users in the application
+ * Includes password hashing and validation methods
+ */
 
+const mongoose = require('mongoose');
+const bcrypt = require('bcryptjs');  // For password hashing
+
+// Define the User Schema with validation
 const userSchema = new mongoose.Schema({
   name: {
     type: String,

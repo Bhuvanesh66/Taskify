@@ -1,3 +1,13 @@
+/**
+ * TaskForm Component
+ * A modal form for creating and editing tasks
+ * Features:
+ * - Form validation using Formik and Yup
+ * - Title, description, and category fields
+ * - Loading state handling
+ * - Reusable for both create and edit operations
+ */
+
 import { useState } from 'react';
 import {
   Dialog,

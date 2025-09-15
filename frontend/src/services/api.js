@@ -1,5 +1,16 @@
+/**
+ * API Service
+ * Centralizes all API calls to the backend
+ * Features:
+ * - Axios instance configuration
+ * - Authentication token management
+ * - Auth endpoints (login, register)
+ * - Task CRUD operations
+ */
+
 import axios from 'axios';
 
+// Base URL for all API calls
 const API_URL = 'http://localhost:5001/api/v1';
 
 const api = axios.create({

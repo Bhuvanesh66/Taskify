@@ -1,3 +1,14 @@
+/**
+ * TaskCard Component
+ * Renders an individual task item with all its details and actions
+ * Features:
+ * - Checkbox for marking task as complete
+ * - Title and description display
+ * - Category chip with color coding
+ * - Edit and delete actions
+ * - Hover animations and visual feedback
+ */
+
 import { useState } from 'react';
 import {
   Card,

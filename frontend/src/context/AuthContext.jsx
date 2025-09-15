@@ -1,6 +1,18 @@
+/**
+ * Authentication Context
+ * Manages authentication state across the application
+ * Features:
+ * - User state management
+ * - Login/Logout functionality
+ * - Token persistence in localStorage
+ * - Automatic authentication state recovery
+ * - Protected route handling
+ */
+
 import { createContext, useContext, useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+// Create context with null default value
 const AuthContext = createContext(null);
 
 export const AuthProvider = ({ children }) => {

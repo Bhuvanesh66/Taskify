@@ -1,12 +1,18 @@
-const express = require('express');
-const mongoose = require('mongoose');
-const cors = require('cors');
-const morgan = require('morgan');
-const rateLimit = require('express-rate-limit');
-const helmet = require('helmet');
-const mongoSanitize = require('express-mongo-sanitize');
-const xss = require('xss-clean');
-require('dotenv').config();
+/**
+ * Main server file for the Taskify application
+ * Sets up Express server with middleware, routes, and error handling
+ */
+
+// Import required dependencies
+const express = require('express');       // Web framework for Node.js
+const mongoose = require('mongoose');     // MongoDB object modeling
+const cors = require('cors');            // Enable Cross-Origin Resource Sharing
+const morgan = require('morgan');         // HTTP request logger
+const rateLimit = require('express-rate-limit');  // Rate limiting middleware
+const helmet = require('helmet');         // Security headers middleware
+const mongoSanitize = require('express-mongo-sanitize');  // Prevent NoSQL injection
+const xss = require('xss-clean');        // Prevent XSS attacks
+require('dotenv').config();              // Load environment variables
 
 const authRoutes = require('./routes/auth');
 const taskRoutes = require('./routes/tasks');
